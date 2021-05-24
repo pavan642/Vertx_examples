@@ -1,0 +1,5 @@
+com/vertx/examples/config/KafkaConsumerInit.class
+com/vertx/examples/MainVerticle.class
+com/vertx/examples/config/KafkaProducerInit.class
+com/vertx/examples/ProducerVerticle.class
+com/vertx/examples/ConsumerVerticle.class

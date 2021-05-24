@@ -23,7 +23,7 @@ To run application:
 mvn clean install
 
 
-java -jar target/vertx_rxrest_dagger-1.0-SNAPSHOT-fat.jar 
+java -jar target/vertx_rxmysql-1.0-SNAPSHOT-fat.jar
 
 API and response : 
 

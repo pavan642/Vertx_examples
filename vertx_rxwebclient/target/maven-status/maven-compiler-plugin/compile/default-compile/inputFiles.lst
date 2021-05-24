@@ -1,0 +1,11 @@
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/HttpRouterVerticle.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/controllers/JokeController.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/MainVerticle.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/services/JokeService.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/router/JokeRouter.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/di/AppModule.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/external/IJokeClient.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/external/JokeClient.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/controllers/IJokeController.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/di/Factory.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_rxwebclient/src/main/java/com/vertx/examples/services/IJokeService.java
