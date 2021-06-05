@@ -1,0 +1,8 @@
+/Users/pavanhome/mywork/Vertx_examples/vertx_redis/src/main/java/com/vertx/examples/controllers/IBookController.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_redis/src/main/java/com/vertx/examples/MainVerticle.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_redis/src/main/java/com/vertx/examples/controllers/BookController.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_redis/src/main/java/com/vertx/examples/HttpRouterVerticle.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_redis/src/main/java/com/vertx/examples/di/AppModule.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_redis/src/main/java/com/vertx/examples/di/Factory.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_redis/src/main/java/com/vertx/examples/routes/BookRouter.java
+/Users/pavanhome/mywork/Vertx_examples/vertx_redis/src/main/java/com/vertx/examples/commons/RedisConfiguration.java

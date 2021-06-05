@@ -1,0 +1,15 @@
+com/vertx/examples/di/Factory$Builder.class
+com/vertx/examples/controllers/IBookController.class
+com/vertx/examples/di/DaggerFactory$Builder.class
+com/vertx/examples/routes/BookRouter.class
+com/vertx/examples/controllers/BookController.class
+com/vertx/examples/MainVerticle.class
+com/vertx/examples/di/DaggerFactory.class
+com/vertx/examples/routes/BookRouter_Factory.class
+com/vertx/examples/commons/RedisConfiguration.class
+com/vertx/examples/di/AppModule.class
+com/vertx/examples/routes/BookRouter_MembersInjector.class
+com/vertx/examples/di/Factory.class
+com/vertx/examples/controllers/BookController_Factory.class
+com/vertx/examples/HttpRouterVerticle.class
+com/vertx/examples/controllers/BookController_MembersInjector.class
