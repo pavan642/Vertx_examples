@@ -2,6 +2,8 @@ package com.vertx.examples.di;
 
 import com.vertx.examples.controllers.IStudentController;
 import com.vertx.examples.controllers.StudentController;
+import com.vertx.examples.external.CacheService;
+import com.vertx.examples.external.ICacheService;
 import com.vertx.examples.services.IStudentService;
 import com.vertx.examples.services.StudentService;
 import dagger.Binds;
@@ -15,5 +17,8 @@ public interface AppModule {
 
     @Binds
     public abstract IStudentController bindStudentController(StudentController studentController);
+
+    @Binds
+    public abstract ICacheService bindCacheService(CacheService cacheService);
 
 }

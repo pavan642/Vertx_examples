@@ -3,10 +3,13 @@ package com.vertx.examples.di;
 import com.vertx.examples.controllers.StudentController;
 import com.vertx.examples.controllers.StudentController_Factory;
 import com.vertx.examples.controllers.StudentController_MembersInjector;
+import com.vertx.examples.external.CacheService;
 import com.vertx.examples.routes.StudentRouter;
 import com.vertx.examples.routes.StudentRouter_Factory;
 import com.vertx.examples.routes.StudentRouter_MembersInjector;
 import com.vertx.examples.services.StudentService;
+import com.vertx.examples.services.StudentService_Factory;
+import com.vertx.examples.services.StudentService_MembersInjector;
 import dagger.internal.Preconditions;
 import io.vertx.core.json.JsonObject;
 import io.vertx.reactivex.core.Vertx;
@@ -28,6 +31,10 @@ public final class DaggerFactory implements Factory {
     return new Builder();
   }
 
+  private StudentService getStudentService() {
+    return injectStudentService(StudentService_Factory.newStudentService());
+  }
+
   private StudentController getStudentController() {
     return injectStudentController(StudentController_Factory.newStudentController());
   }
@@ -42,8 +49,13 @@ public final class DaggerFactory implements Factory {
     return injectStudentRouter(StudentRouter_Factory.newStudentRouter());
   }
 
+  private StudentService injectStudentService(StudentService instance) {
+    StudentService_MembersInjector.injectCacheService(instance, new CacheService());
+    return instance;
+  }
+
   private StudentController injectStudentController(StudentController instance) {
-    StudentController_MembersInjector.injectStudentService(instance, new StudentService());
+    StudentController_MembersInjector.injectStudentService(instance, getStudentService());
     return instance;
   }
 

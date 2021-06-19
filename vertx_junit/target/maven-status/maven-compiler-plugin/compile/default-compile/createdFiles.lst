@@ -1,8 +1,10 @@
 com/vertx/examples/di/Factory$Builder.class
 com/vertx/examples/routes/StudentRouter_Factory.class
+com/vertx/examples/external/ICacheService.class
 com/vertx/examples/pojo/StudentPoJo.class
 com/vertx/examples/services/IStudentService.class
 com/vertx/examples/controllers/IStudentController.class
+com/vertx/examples/services/StudentService_MembersInjector.class
 com/vertx/examples/di/DaggerFactory$Builder.class
 com/vertx/examples/MainVerticle.class
 com/vertx/examples/controllers/StudentController_Factory.class
@@ -13,6 +15,8 @@ com/vertx/examples/di/AppModule.class
 com/vertx/examples/di/Factory.class
 com/vertx/examples/controllers/StudentController_MembersInjector.class
 com/vertx/examples/controllers/StudentController.class
+com/vertx/examples/external/CacheService_Factory.class
 com/vertx/examples/services/StudentService_Factory.class
 com/vertx/examples/HttpRouterVerticle.class
+com/vertx/examples/external/CacheService.class
 com/vertx/examples/routes/StudentRouter.class
