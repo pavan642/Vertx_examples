@@ -1,5 +1,9 @@
 package com.vertx.examples;
 
+import com.aerospike.client.AerospikeClient;
+import com.aerospike.client.async.EventPolicy;
+import com.aerospike.client.async.NioEventLoops;
+import com.aerospike.client.policy.ClientPolicy;
 import com.vertx.examples.di.DaggerFactory;
 import com.vertx.examples.di.Factory;
 import com.vertx.examples.routes.RouterService;
@@ -26,7 +30,6 @@ public class HttpRouterVerticle extends AbstractVerticle {
 
 
         Router router = Router.router(vertx);
-
         Factory factory = DaggerFactory.builder().injectConfig(config()).injectVertx(vertx).injectRouter(router).build();
 
         RouterService reviewRouter = factory.routerService();
