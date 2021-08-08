@@ -49,7 +49,7 @@ public class StudentServiceUnitTest {
     public void testStudentData(){
         StudentService studentService = new StudentService();
         studentService.getStudentData(121).subscribe((entries, throwable) -> {
-            Assert.assertEquals(entries.getName(), "fludo");
+            Assert.assertEquals(entries.getName(), "sam");
         });
     }
 

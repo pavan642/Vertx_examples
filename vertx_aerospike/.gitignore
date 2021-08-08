@@ -1,3 +1,31 @@
 *.iml
 target/*
 
+##############################
+
+.DS_Store
+
+##############################
+## IntelliJ
+##############################
+.idea/
+.idea_modules/
+.settings/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.classpath
+*.factorypath
+*.project
+out/
+
+
+
+
+
+##############################
+## Maven
+##############################
+target/
+

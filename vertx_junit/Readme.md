@@ -13,3 +13,9 @@ Response:
 "id": 1211,
 "gender": "male"
 }
+
+
+To run test using command line 
+# https://mkyong.com/maven/how-to-run-unit-test-with-maven/
+
+mvn test
