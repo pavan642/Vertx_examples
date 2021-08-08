@@ -1,37 +1,42 @@
-Vertx example rx java - mysql
+To run vertx mysql example please have following dependencies
 
-create database reviews;
+        Java 11 installed
+        Mysql 
 
-use reviews;
+Databse set up : 
 
-create table reviews(id int auto_increment primary key, customer_id int, review text);
+	create database reviews;
+	use reviews;
+	create table reviews(id int auto_increment primary key, customer_id int, review text);
+	create table customers(id int auto_icrement primary key, first_name varchar(100));
+	insert into customers (first_name) values('john');
+	insert into customers (first_name) values('ram');
+	insert into reviews (customer_id, review) values (1, "this is good");
+	insert into reviews (customer_id, review) values (1, "product is good");
+	insert into reviews (customer_id, review) values (2, "product is helpful");
 
-create table customers(id int auto_icrement primary key, first_name varchar(100));
+Pull the latest code and run below command to compile code
 
-insert into customers (first_name) values('john');
-insert into customers (first_name) values('ram');
-
-insert into reviews (customer_id, review) values (1, "this is good");
-
-insert into reviews (customer_id, review) values (1, "product is good");
-
-insert into reviews (customer_id, review) values (2, "product is helpful");
-
-
-To run application:
-
-mvn clean install
+        mvn clean install
 
 
-java -jar target/vertx_rxmysql-1.0-SNAPSHOT-fat.jar
+After code is compiled successfully, Run the application
 
-API and response : 
+        java -jar target/vertx_rxmysql-1.0-SNAPSHOT-fat.jar
 
-curl --location --request GET 'http://localhost:8083/reviews' \
---header 'Content-Type: application/json'
+Application run in port : 8083
 
-{
-"id": 1,
-"review": "this is good",
-"customer_id": 1
-}
+Sample Http request
+
+        curl --location --request GET 'http://localhost:8083/reviews' \
+		--header 'Content-Type: application/json'
+
+
+	{
+		"id": 1,
+		"review": "this is good",
+		"customer_id": 1
+	}
+
+
+Hurray! :):)

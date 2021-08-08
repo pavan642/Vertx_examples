@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processor name="dagger.internal.codegen.ComponentProcessor" />
         <processor name="io.vertx.codegen.CodeGenProcessor" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/com/google/dagger/dagger-compiler/2.16/dagger-compiler-2.16.jar" />
